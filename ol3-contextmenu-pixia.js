@@ -7,11 +7,7 @@
  * Built: Fri Feb 24 2017 15:11:20 GMT-0300 (BRT)
  */
 
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory('ContextMenu') :
-        typeof define === 'function' && define.amd ? define(factory) :
-            (global.ContextMenu = factory());
-}(this, (function () { 'use strict';
+module.exports.ContextMenu = (function () { 'use strict';
 
     var namespace = "ol-ctx-menu";
     var container_class = "-container";
@@ -882,4 +878,4 @@
 
     return Base;
 
-})));
+});
